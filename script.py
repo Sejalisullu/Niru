@@ -40,19 +40,19 @@ time.sleep(3)
 
 # Username
 element = driver.find_element(By.XPATH, "/html/body/div[1]/main/div[3]/div/form/div[1]/div[2]/div/div/input")  # Replace with the correct XPath
-element.send_keys("srinivasanc0504@gmail.com")
+element.send_keys("nirupeshcs@icloud.com")
 element.send_keys(Keys.ENTER)
 time.sleep(3)
 
 # Password
 passw = driver.find_element(By.XPATH, "/html/body/div[1]/main/div[3]/div/form/div[1]/div[2]/div[2]/div/div/input")  # Replace with the correct XPath
-passw.send_keys("Chegg@050402")
+passw.send_keys("#Hitlin3945")
 passw.send_keys(Keys.ENTER)
 time.sleep(3)
 
 
 
-telegram_bot_sendtext("Logged ELECT")
+telegram_bot_sendtext("Logged Niru")
 
 # Navigate to the authoring page
 driver.get("https://expert.chegg.com/qna/authoring/answer")
@@ -78,7 +78,7 @@ while True:
                target_time += timedelta(days=1)
            # Calculate the difference in seconds
            n = (target_time - now).total_seconds()
-           telegram_bot_sendques("LIMIT ELECT")
+           telegram_bot_sendques("LIMIT Niru")
            time.sleep(n)
 
         driver.get("https://expert.chegg.com/qna/authoring/answer")
@@ -90,13 +90,13 @@ while True:
             if i <= 1:
                 telegram_bot_sendtext(i)
             elif i % 100 == 0:
-                status = f"UP Running...  {i/10} ELECT"
+                status = f"UP Running...  {i/10} Niru"
                 telegram_bot_sendtext(status)
             i += 1
         else:
-            telegram_bot_sendques("ELECT")
+            telegram_bot_sendques("Niru")
             time.sleep(720)
     except Exception as e:
-        telegram_bot_sendtext("An error occurred ELECT")
+        telegram_bot_sendtext("An error occurred Niru")
 # Quit the WebDriver
 driver.quit()
